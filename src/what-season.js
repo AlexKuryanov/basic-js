@@ -5,7 +5,7 @@ module.exports = function getSeason(date) {
     throw Error;
   } else {
     switch (date.getMonth()) {
-      case null:
+      case !date:
         return "Unable to determine the time of year!";
         break;
       case 11:
